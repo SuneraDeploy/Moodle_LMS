@@ -1,0 +1,31 @@
+FROM debian:11.4
+USER root
+EXPOSE 8080 8443
+RUN apt-get update --allow-unauthenticated --allow-insecure-repositories && apt-get upgrade -y && apt-get install -y apache2 libapache2-mod-php php7.4-common php7.4-mbstring php7.4-curl php7.4-xmlrpc php7.4-mysqli php7.4-xml php7.4-soap php7.4-zip php7.4-gd php7.4-intl vim-tiny nano git cron
+RUN apt clean autoclean
+RUN apt autoremove
+WORKDIR /var/www
+RUN git clone git://git.moodle.org/moodle.git moodle
+WORKDIR /var/www/moodle
+RUN git branch --track MOODLE_311_STABLE origin/MOODLE_311_STABLE
+RUN git checkout MOODLE_311_STABLE
+COPY config.php config.php
+WORKDIR /var/www/moodledata
+RUN chmod 777 .
+WORKDIR /etc/apache2
+RUN a2enmod ssl
+RUN a2ensite default-ssl
+RUN sed -i -e 's/80/8080/' ports.conf
+RUN sed -i -e 's/443/8443/' ports.conf
+WORKDIR /etc/apache2/sites-available
+RUN sed -i -e 's/:80/:8080/' 000-default.conf
+RUN sed -i -e 's/#Servername.*$/ServerName localhost/' 000-default.conf
+RUN sed -i -e 's/\/html/\/moodle/' 000-default.conf
+RUN sed -i -e 's/\/html/\/moodle/' default-ssl.conf
+RUN sed -i -e 's/:443/:8443/' default-ssl.conf
+WORKDIR /etc/php/7.4/apache2
+RUN sed -i -e 's/^;max_input_vars.*$/max_input_vars = 5000/' php.ini
+WORKDIR /usr/local/bin
+COPY run.sh run.sh
+RUN chmod 777 run.sh
+CMD /usr/local/bin/run.sh 
