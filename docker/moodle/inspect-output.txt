@@ -1,0 +1,291 @@
+[
+    {
+        "Id": "5de84dba2f9346399ab04693b46c694212e8d0abe832920bf99685e2c01ff6e3",
+        "Created": "2025-02-26T19:00:46.634121463Z",
+        "Path": "/bin/sh",
+        "Args": [
+            "-c",
+            "/usr/local/bin/run.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 18423,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2025-02-26T19:00:55.045001974Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:11821691c0f4af8ba3d140066536cc6fcd64c46ef67e47f8eb33d5487655817d",
+        "ResolvConfPath": "/var/lib/docker/containers/5de84dba2f9346399ab04693b46c694212e8d0abe832920bf99685e2c01ff6e3/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5de84dba2f9346399ab04693b46c694212e8d0abe832920bf99685e2c01ff6e3/hostname",
+        "HostsPath": "/var/lib/docker/containers/5de84dba2f9346399ab04693b46c694212e8d0abe832920bf99685e2c01ff6e3/hosts",
+        "LogPath": "/var/lib/docker/containers/5de84dba2f9346399ab04693b46c694212e8d0abe832920bf99685e2c01ff6e3/5de84dba2f9346399ab04693b46c694212e8d0abe832920bf99685e2c01ff6e3-json.log",
+        "Name": "/moodle-moodle-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "moodle_default",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "80"
+                    }
+                ],
+                "8443/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "443"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "volume",
+                    "Source": "moodle_moodle_code",
+                    "Target": "/var/www/moodle",
+                    "VolumeOptions": {}
+                },
+                {
+                    "Type": "volume",
+                    "Source": "moodle_moodle_data",
+                    "Target": "/var/www/moodledata",
+                    "VolumeOptions": {}
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/8aae5b2b2b89b2e55d1a9572c0f514c945237be9f1d1aef627d64b8a3ab551c4-init/diff:/var/lib/docker/overlay2/3yfx0ld9aquqiln3m348vcukf/diff:/var/lib/docker/overlay2/xrgegapxkb5q70tkk2frharhq/diff:/var/lib/docker/overlay2/m0qhafdeute2ece40z5ofcgf8/diff:/var/lib/docker/overlay2/tmsr0cr9gccgpl1n8swhrwnvg/diff:/var/lib/docker/overlay2/j4aa49ccxbhiibzcr39tkp57m/diff:/var/lib/docker/overlay2/z6h87rilgx274whyxqqn04uuh/diff:/var/lib/docker/overlay2/mqicw7q5eqeeu37j8zw1zhvjg/diff:/var/lib/docker/overlay2/ew88d4gm83zp6tmuwjkaar3dq/diff:/var/lib/docker/overlay2/qs4zuxy9190k2kpo3eb9b98w9/diff:/var/lib/docker/overlay2/t7gruruoq07851l7q0mbbhs07/diff:/var/lib/docker/overlay2/qrglmkqnvt6ts4x7qvbqpfyjl/diff:/var/lib/docker/overlay2/dqbjapudziuieos0a5ihl3605/diff:/var/lib/docker/overlay2/408vhpoplbvmpurx4394uyeyn/diff:/var/lib/docker/overlay2/n183jrj07cr6xidnridd7x43e/diff:/var/lib/docker/overlay2/b6j94j1i9k8qhw5283ivihdrx/diff:/var/lib/docker/overlay2/ldcesd70fc0j6731gz78ygfpb/diff:/var/lib/docker/overlay2/s3m30bnqr7zwwo9wer988nj2y/diff:/var/lib/docker/overlay2/u83tvzh13omwggwt0iwjjsja9/diff:/var/lib/docker/overlay2/wfzp01ov005ooivhvuig3x3s6/diff:/var/lib/docker/overlay2/qt3y1sw98ejjzal9frc5j2lga/diff:/var/lib/docker/overlay2/huaeil9eosk2q96egn7k5vgs4/diff:/var/lib/docker/overlay2/jst8ngo74jr295nw1jnixfkcl/diff:/var/lib/docker/overlay2/tpc4w1uern24t0v1v6kdy1mb6/diff:/var/lib/docker/overlay2/pvmeg3do9kmcic5aoynuezpxi/diff:/var/lib/docker/overlay2/p1tu1n9i7nbsu8pyj1u4tb2pd/diff:/var/lib/docker/overlay2/q0iwwqkibz0s2xqdy4k4zgwdl/diff:/var/lib/docker/overlay2/xq0iu4qqjwy9y5vq21y7dt24m/diff:/var/lib/docker/overlay2/f35b93941fe4546a6413a85d98d9646fdc080cbd8fb43d3a658381efd68d34d9/diff",
+                "MergedDir": "/var/lib/docker/overlay2/8aae5b2b2b89b2e55d1a9572c0f514c945237be9f1d1aef627d64b8a3ab551c4/merged",
+                "UpperDir": "/var/lib/docker/overlay2/8aae5b2b2b89b2e55d1a9572c0f514c945237be9f1d1aef627d64b8a3ab551c4/diff",
+                "WorkDir": "/var/lib/docker/overlay2/8aae5b2b2b89b2e55d1a9572c0f514c945237be9f1d1aef627d64b8a3ab551c4/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "moodle_moodle_code",
+                "Source": "/var/lib/docker/volumes/moodle_moodle_code/_data",
+                "Destination": "/var/www/moodle",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "volume",
+                "Name": "moodle_moodle_data",
+                "Source": "/var/lib/docker/volumes/moodle_moodle_data/_data",
+                "Destination": "/var/www/moodledata",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "5de84dba2f93",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8080/tcp": {},
+                "8443/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MOODLE_DATABASE_USER=bn_moodle",
+                "MOODLE_DATABASE_NAME=bitnami_moodle",
+                "MOODLE_DATABASE_PASSWORD=mia?ng1Iew%u",
+                "MOODLE_USERNAME=admin",
+                "MOODLE_PASSWORD=ohs6UNu0De#x",
+                "MOODLE_DATABASE_HOST=mariadb",
+                "MOODLE_DATABASE_PORT_NUMBER=3306",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "/usr/local/bin/run.sh"
+            ],
+            "Image": "moodle-moodle",
+            "Volumes": null,
+            "WorkingDir": "/usr/local/bin",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "50bab1eac0540cd0d9dc73fc0edc3232bfd96a00b2b4c61ae38861fce2c0d42d",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "mariadb:service_started:false",
+                "com.docker.compose.image": "sha256:11821691c0f4af8ba3d140066536cc6fcd64c46ef67e47f8eb33d5487655817d",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "moodle",
+                "com.docker.compose.project.config_files": "D:\\Github\\Moodle_LMS\\docker\\moodle\\docker-compose.yml",
+                "com.docker.compose.project.working_dir": "D:\\Github\\Moodle_LMS\\docker\\moodle",
+                "com.docker.compose.service": "moodle",
+                "com.docker.compose.version": "2.32.4"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "be6eba8ea5d62396ff13063f70bec382975c48a2b3a1ffb4d63b7be7520264d1",
+            "SandboxKey": "/var/run/docker/netns/be6eba8ea5d6",
+            "Ports": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "80"
+                    }
+                ],
+                "8443/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "443"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "moodle_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "moodle-moodle-1",
+                        "moodle"
+                    ],
+                    "MacAddress": "02:42:ac:12:00:03",
+                    "DriverOpts": null,
+                    "NetworkID": "67fb75b59f592054113f91ddc85ca9d7e510e71553c69cf1f02e5f09f00235cc",
+                    "EndpointID": "da4ce816199293fd43991d987f7df2c788b940d555a9136db4449d2e19a68aaa",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "moodle-moodle-1",
+                        "moodle",
+                        "5de84dba2f93"
+                    ]
+                }
+            }
+        }
+    }
+]
